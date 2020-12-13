@@ -2,18 +2,35 @@
 <html>
     <head>
         <title>GPA calculator</title>
-        <script src ="Gpacalc.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded' , function() {
+                function update() {
+
+                    const list = document.createElement('li')
+                    list.innerHTML = document.querySelector('#Class-Name').value
+                    const task = document.querySelector('ul')
+                    task.append(list)
+                    return false
+
+                    
+                }
+                document.querySelector('form').onsubmit = update
+            })
+            
+            
+        </script>
 
     </head>
     <body>
         <h1 style="font-size: 50px;">GPA Calculator</h1>
+        <ul>
+
+        </ul>
         <form>
-            <input type="text" placeholder="classroom name ex. english" id="clName">
-            <input type="text" placeholder="semester 1 or 2" id="semes">
-            <input type="text" placeholder="" id="clID">
+            <input id="Class-Name" type="text" placeholder="Class Name">
             <input type="submit">
         </form>
-
+        
         <a href="Home.html"> <p style="background-color:dodgerblue;font-size:30px;"> Homepage </p></a>
     </body>
 </html>
