@@ -8,14 +8,42 @@
     </head>
     <body>
         <h1 style="font-size: 50px;">GPA Calculator</h1>
-        <ul>
-
-        </ul>
+        
         <form>
-            <input id="Class-Name" type="text" placeholder="Class Name"><br>
-            <input id="Semester" type="text" placeholder="Semester 1 or 2">
-            <input id="Grade" type="text" placeholder="Your Grade ex. 1,4,1.5"><br>
+            <input id="Class-Name" type="text" placeholder="Class ID"><br>
+            <select name="Semester" id="Semester">
+                <option value="Se1">1/2562</option>
+                <option value="Se2">2/2562</option>
+            </select>
+            <select name="gpa" id="gpa">
+                <option value="4" >A
+                <option value="3.5" >B+
+                <option value="3" >B
+                <option value="2.5" >C+
+                <option value="2" >C
+                <option value="1.5" >D+
+                <option value="1" >D
+                <option value="0" >F
+            </select>
             <input type="submit">
+            <p>1/2562</p>
+            <ul id="Se1"></ul>
+            <p>gpa : </p>
+            <p id="gpaSe1">0.00</p>
+            <p id="cSe1">0</p>
+            <p>2/2562</p>
+            <ul id="Se2"></ul>
+            <p>gpa : </p>
+            <p id="gpaSe2">0.00</p>
+            <p id="cSe2">0</p>
+            <h1>ALL GPA</h1>
+            <p>grade : </p>
+            <p id="gpaAll">0.00</p>
+            <p>Allsubject : </p>
+            <p id="cx">0</p>
+            <h1>CPE GPA</h1>
+            <p>grade : </p><p id="gpaCPE">0.00</p>
+            <p>Allsubject : </p><p id="cCPE">0</p>
         </form>
         
         <a href="Home.html"> <p style="background-color:dodgerblue;font-size:30px;"> Homepage </p></a>
